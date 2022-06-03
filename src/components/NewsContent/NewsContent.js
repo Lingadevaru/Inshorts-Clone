@@ -13,6 +13,21 @@ const NewsContent = ({ newsArray, newsResults, setLoadmore, loadmore }) => {
           <span className="downloadText">
             For the best experience use Inshorts App on your smartphone.
           </span>
+          <div className="googleStore">
+          <img
+            style={{ cursor: "pointer" }}
+            src="https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_playstore_google-512.png"
+            height="40"
+            alt="Google Playstore"
+          />
+          
+          <img
+            style={{ cursor: "pointer" }}
+            src="https://cdn3.iconfinder.com/data/icons/picons-social/57/16-apple-512.png"
+            height="40"
+            alt="Apple Playstore"
+          />
+          </div>
         </div>
 
         {newsArray && newsArray.length
@@ -24,7 +39,12 @@ const NewsContent = ({ newsArray, newsResults, setLoadmore, loadmore }) => {
         {loadmore <= newsResults && (
           <>
             <hr />
-            <button className="loadMore" onClick={()=>setLoadmore(loadmore+20)}>Load More</button>
+            <button
+              className="loadMore"
+              onClick={() => setLoadmore(loadmore + 20)}
+            >
+              Load More
+            </button>
           </>
         )}
       </div>

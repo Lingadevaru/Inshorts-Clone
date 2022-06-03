@@ -6,12 +6,9 @@ const Footer = () => {
     <div className='footer'>
         <span className='name'>
             Inshorts clone made by -{" "}
-            <a href='https://www.linkedin.com/in/lingadevaru-c-a6224712b/' target="__blank">Lingadevaru C</a>
+            <a href='https://www.linkedin.com/in/lingadevaru-c-a6224712b/' target="__blank"><u>Lingadevaru C</u></a>
         </span>
-        <hr style={{width: "90%"}}/>
-        <div className='iconContainer'>
-
-        </div>
+        {/* <hr style={{width: "90%"}}/> */}
     </div>
   )
 }
